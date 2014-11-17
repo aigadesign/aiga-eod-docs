@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>Client Name Documentation by XXIX</title>
+  <meta name="description" content="The base template for creating awesome documentation for XXIX clients. You'll want to fill this space with a short description and reminde of the site URL.
+">
+  <meta name="author" content="XXIX">
+  <meta name="description" content="XXIX Docs">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/">
+
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nav.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+
+  <body>
+
+    <div class="page-nav" id="page-nav">
+  <div class="body">
+    <div class="article">
+      <div class="logo"></div>
+      <div class="nav-toggle" data-toggle-nav="#page-nav"></div>
+      <div class="posts-wrapper" id="#post-wrapper">
+        <ul class="mod-post-list" id="nav">
+          <li class="post current"><a class="post-link" href="#post-0">Introduction</a></li>
+          
+            <li class="post"><a class="post-link" href="#post-1">Getting Started</a></li>
+          
+            <li class="post"><a class="post-link" href="#post-2">Managing Posts</a></li>
+          
+        </ul>
+        <footer>
+  <p><a href="http://xxix.co">XXIX</a></p>
+</footer>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-introduction" id="post-0">
+    <div class="section" data-vertical-align-parent>
+      <div class="article" data-vertical-align-to="1024">
+        <div class="head">
+          <div class="date">2014</div>
+          <h1><span class="client">Client Name</span><br>Documentation</h1>
+          <p class="meta">The base template for creating awesome documentation for XXIX clients. You'll want to fill this space with a short description and reminde of the site URL.
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class="page-post" id="post-1">
+      <div class="section">
+        <div class="head">
+          <div class="article">
+            <h1>Getting Started</h1>
+          </div>
+        </div>
+        <div class="body">
+          <div class="article">
+            <h2 id="a-mix-of-stencil-jekyll-and-github-pages">A mix of Stencil, Jekyll and GitHub pages</h2>
+
+<h3 id="what-you-need-to-know">What you need to know</h3>
+
+<ul>
+  <li>Powered by Jekyll, a static site generator</li>
+  <li>Built on top of <a href="http://github.com/micdijkstra/stencil">Stencil</a> as a base to provide a set of Scss helpers</li>
+  <li>Configured to be hosted on GitHub pages</li>
+</ul>
+
+<h3 id="creating-a-new-set-of-docs">Creating a new set of docs</h3>
+<ul>
+  <li>Create a new repository <code>clientname-docs</code></li>
+  <li>Clone the repository locally <code>git clone git@github.com:XXIX/clientname-docs.git</code></li>
+  <li>Copy the docs into the new repository folder</li>
+  <li>Move into the folder <code>$ cd clientname-docs</code></li>
+  <li>Run <code>$ bundle</code></li>
+  <li>Start the jekyll server <code>$ jekyll serve</code></li>
+  <li>View the site locally at <a href="http://localhost:4000">http://localhost:4000</a></li>
+  <li>Update the site settings in <code>_config.yml</code></li>
+  <li>Replace logo files in <code>img</code> (to ensure everything ‘just works’ keep them the same size as the originals)</li>
+  <li>Add/Edit posts as Markdown in the <code>_posts</code> folder</li>
+  <li>Commit your changes to the <code>gh-pages</code> branch</li>
+  <li>Push the <code>gh-pages</code> branch to GitHub</li>
+  <li>View your site at <a href="http://xxix.github.io/clientname-docs">http://xxix.github.io/clientname-docs</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="page-post" id="post-2">
+      <div class="section">
+        <div class="head">
+          <div class="article">
+            <h1>Managing Posts</h1>
+          </div>
+        </div>
+        <div class="body">
+          <div class="article">
+            <h2 id="you-better-love-writing-markdown">You better love writing Markdown</h2>
+
+<h3 id="what-you-need-to-know">What you need to know</h3>
+<ul>
+  <li>All posts are compiled from Markdown files which are saved in the <code>_posts</code> folder.</li>
+  <li>Posts are order by date, in ascending order (oldest first)</li>
+  <li>Post dates are pulled from the file name, e.g. <code>2014-11-16-getting-started.md</code> has the date 16th November 2014.</li>
+  <li>Post titles are pulled from the file name, e.g. <code>2014-11-16-getting-started.md</code> has the title ‘Getting Started’</li>
+  <li>If something isn’t being compiled properly add an extra line break, Markdown loves line breaks.</li>
+</ul>
+
+<hr />
+
+<h3 id="captions">Captions</h3>
+
+<p>Captions sit out in the right hand side gutter when there’s enough room. To create a caption, you need to wrap the content block in a div and use a block quote.</p>
+
+<p>For example, the following:</p>
+
+<div>
+  <p><img src="img/screenshot.png" alt="My Image" /></p>
+
+  <blockquote>
+    <h4 id="caption-title">Caption title</h4>
+    <p>With some content underneath.</p>
+  </blockquote>
+</div>
+
+<p>Can be created by:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">markdown=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+  ![My Image](img/screenshot.png)
+
+&gt; #### Caption title  
+With some content underneath.
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<hr />
+
+<h3 id="code-snippets">Code snippets</h3>
+
+<p>Jekyll has built-in support for syntax highlighting of code snippets. To include a code snippet in any post, just use the dedicated Liquid tags.</p>
+
+<p>For example, the following:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<p>Can be created by:</p>
+
+<p>{% highlight ruby %}<br />
+def show<br />
+  @widget = Widget(params[:id])<br />
+  respond_to do |format|<br />
+    format.html # show.html.erb<br />
+    format.json { render json: @widget }<br />
+  end<br />
+end<br />
+{% endhighlight %}  </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="page-cta">
+    <div class="section">
+      <div class="article">
+        <p>Still got questions? Send an email to <a href="mailto:studio@xxix.co">studio@xxix.co</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+
+</html>
