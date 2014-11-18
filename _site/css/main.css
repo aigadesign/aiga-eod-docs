@@ -741,7 +741,7 @@ footer {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: transparent url("../img/logo-160x160.png") no-repeat center center;
+    background: transparent url("../img/aiga-eye-square.gif") no-repeat center center;
     background-size: 60px 60px;
     float: left;
     height: 80px;
@@ -791,8 +791,8 @@ footer {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         background-color: #231f20;
-        background-image: url("../img/logo-600x600.png");
-        background-size: 300px 300px;
+        background-image: url("../img/aiga-eye-square.gif");
+        background-size: 125px 125px;
         border-right: 1px solid rgba(255, 224, 0, 0.4);
         float: none;
         height: 300px;
