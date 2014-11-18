@@ -2,6 +2,8 @@
 
 The AIGA Eye on Design website has been built on Wordpress using a blank canvas theme, the [Stencil](http://github.com/micdijkstra/Stencil) front-end framework and a number of open source plugins.
 
+![Theme Screenshot](img/screenshot.png)
+
 ## The Stencil Theme
 
 The Stencil theme is an adaptation of [BlankSlate](https://wordpress.org/themes/blankslate) which has the [Stencil](http://github.com/micdijkstra/Stencil) front-end framework included.
