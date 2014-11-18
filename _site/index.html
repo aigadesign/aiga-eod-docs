@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <title>Client Name Documentation by XXIX</title>
-  <meta name="description" content="The base template for creating awesome documentation for XXIX clients. You'll want to fill this space with a short description and reminde of the site URL.
+  <title>AIGA Eye on Design Documentation by XXIX</title>
+  <meta name="description" content="Documentation for the Wordpress site created for AIGA Eye on Design found at http://eyeondesign-staging.aiga.org
 ">
   <meta name="author" content="XXIX">
   <meta name="description" content="XXIX Docs">
@@ -16,8 +16,9 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/modernizr.js"></script>
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/">
+  <link rel="stylesheet" href="/aiga-eod-docs/css/main.css">
+  <link rel="canonical" href="/aiga-eod-docs/">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   <!--[if lt IE 9]>
     <script type="text/javascript" src="js/respond.js"></script>
@@ -33,18 +34,31 @@
 
     <div class="page-nav" id="page-nav">
   <div class="body">
-    <div class="article">
+    <div class="nav-header">
       <div class="logo"></div>
       <div class="nav-toggle" data-toggle-nav="#page-nav"></div>
+    </div>
+    <div class="article">
       <div class="posts-wrapper" id="#post-wrapper">
-        <ul class="mod-post-list" id="nav">
-          <li class="post current"><a class="post-link" href="#post-0">Introduction</a></li>
-          
-            <li class="post"><a class="post-link" href="#post-1">Getting Started</a></li>
-          
-            <li class="post"><a class="post-link" href="#post-2">Managing Posts</a></li>
-          
-        </ul>
+        <div class="wrapper">
+          <ul class="mod-post-list" id="nav">
+            <li class="post current"><a class="post-link" href="#post-0">Introduction</a></li>
+            
+              <li class="post"><a class="post-link" href="#post-1">Site Settings</a></li>
+            
+              <li class="post"><a class="post-link" href="#post-2">Posts</a></li>
+            
+              <li class="post"><a class="post-link" href="#post-3">Categories</a></li>
+            
+              <li class="post"><a class="post-link" href="#post-4">Users</a></li>
+            
+              <li class="post"><a class="post-link" href="#post-5">Pages</a></li>
+            
+              <li class="post"><a class="post-link" href="#post-6">Technical Details</a></li>
+            
+          </ul>
+        </div>
+
         <footer>
   <p><a href="http://xxix.co">XXIX</a></p>
 </footer>
@@ -60,8 +74,8 @@
       <div class="article" data-vertical-align-to="1024">
         <div class="head">
           <div class="date">2014</div>
-          <h1><span class="client">Client Name</span><br>Documentation</h1>
-          <p class="meta">The base template for creating awesome documentation for XXIX clients. You'll want to fill this space with a short description and reminde of the site URL.
+          <h1><span class="client">AIGA Eye on Design</span><br>Documentation</h1>
+          <p class="meta">Documentation for the Wordpress site created for AIGA Eye on Design found at http://eyeondesign-staging.aiga.org
 </p>
         </div>
       </div>
@@ -73,37 +87,47 @@
       <div class="section">
         <div class="head">
           <div class="article">
-            <h1>Getting Started</h1>
+            <h1>Site Settings</h1>
           </div>
         </div>
         <div class="body">
           <div class="article">
-            <h2 id="a-mix-of-stencil-jekyll-and-github-pages">A mix of Stencil, Jekyll and GitHub pages</h2>
+            <p>As the site is a standard Wordpress install, the settings are managed via the Wordpress admin.</p>
 
-<h3 id="what-you-need-to-know">What you need to know</h3>
+<h2 id="custom-settings">Custom Settings</h2>
 
-<ul>
-  <li>Powered by Jekyll, a static site generator</li>
-  <li>Built on top of <a href="http://github.com/micdijkstra/stencil">Stencil</a> as a base to provide a set of Scss helpers</li>
-  <li>Configured to be hosted on GitHub pages</li>
-</ul>
+<p>Two custom fields were added to the Setting &gt; General page to allow the admin to update the address in the footer and enable the newsletter icons.</p>
 
-<h3 id="creating-a-new-set-of-docs">Creating a new set of docs</h3>
-<ul>
-  <li>Create a new repository <code>clientname-docs</code></li>
-  <li>Clone the repository locally <code>git clone git@github.com:XXIX/clientname-docs.git</code></li>
-  <li>Copy the docs into the new repository folder</li>
-  <li>Move into the folder <code>$ cd clientname-docs</code></li>
-  <li>Run <code>$ bundle</code></li>
-  <li>Start the jekyll server <code>$ jekyll serve</code></li>
-  <li>View the site locally at <a href="http://localhost:4000">http://localhost:4000</a></li>
-  <li>Update the site settings in <code>_config.yml</code></li>
-  <li>Replace logo files in <code>img</code> (to ensure everything ‘just works’ keep them the same size as the originals)</li>
-  <li>Add/Edit posts as Markdown in the <code>_posts</code> folder</li>
-  <li>Commit your changes to the <code>gh-pages</code> branch</li>
-  <li>Push the <code>gh-pages</code> branch to GitHub</li>
-  <li>View your site at <a href="http://xxix.github.io/clientname-docs">http://xxix.github.io/clientname-docs</a></li>
-</ul>
+<h3 id="footer-address">Footer Address</h3>
+
+<p>To edit the address in the footer go to Settings &gt; General and then scroll to the bottom of the page where you will find a field with the label ‘Footer Address Line’. Update this field to change the address in the footer.</p>
+
+<p>The default value at launch was:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">© Copyright 2014  ·  AIGA  164 Fifth Avenue, New York, NY 10010  ·  212 807 1990</code></pre></div>
+
+<h3 id="newsletter-icon">Newsletter Icon</h3>
+
+<p>To configure the newsletter icon on the bottom of the About page and in the footer go to Settings &gt; General and then scroll to the bottom of the page where you will find a field with the label ‘Newsletter URL’. Update this field to the URL where the newsletter icon should link to, e.g. <code>http://my.aiga.org</code>.</p>
+
+<p>When this field is completely empty the newsletter icon will not be shown.</p>
+
+<p>The default value at launch was blank.</p>
+
+<h2 id="custom-bulkquick">Custom Bulk/Quick</h2>
+
+<p><em>Note: This plugin has been deactivated due to an unresolved field duplication bug</em>.</p>
+
+<p>The Custom Bulk/Quick Edit plugin allows you to add extra fields to the Quick Edit box. In order to add a custom field you must first configure the field via code, by adding the following to <code>functions.php</code> inside the Stencil theme folder, replacing <code>heading_sub_heading</code> with the custom field you wish to add.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">add_filter( &#39;manage_post_posts_columns&#39;, &#39;stencil_manage_post_posts_columns&#39; );</span>
+<span class="x">function stencil_manage_post_posts_columns( $columns ) {</span>
+<span class="x">  $columns[&#39;heading_sub_heading&#39;] = esc_html__( &#39;Sub Heading&#39; );</span>
+
+<span class="x">  return $columns;</span>
+<span class="x">}</span></code></pre></div>
+
+<p>Note: All custom fields can be found at the top of the <code>functions.php</code> file.</p>
 
           </div>
         </div>
@@ -114,75 +138,256 @@
       <div class="section">
         <div class="head">
           <div class="article">
-            <h1>Managing Posts</h1>
+            <h1>Posts</h1>
           </div>
         </div>
         <div class="body">
           <div class="article">
-            <h2 id="you-better-love-writing-markdown">You better love writing Markdown</h2>
+            <h2 id="titles-and-sub-headings">Titles and Sub Headings</h2>
 
-<h3 id="what-you-need-to-know">What you need to know</h3>
-<ul>
-  <li>All posts are compiled from Markdown files which are saved in the <code>_posts</code> folder.</li>
-  <li>Posts are order by date, in ascending order (oldest first)</li>
-  <li>Post dates are pulled from the file name, e.g. <code>2014-11-16-getting-started.md</code> has the date 16th November 2014.</li>
-  <li>Post titles are pulled from the file name, e.g. <code>2014-11-16-getting-started.md</code> has the title ‘Getting Started’</li>
-  <li>If something isn’t being compiled properly add an extra line break, Markdown loves line breaks.</li>
-</ul>
+<h3 id="title">Title</h3>
 
-<hr />
+<p>The Post title should be no more than 8 words.</p>
 
-<h3 id="captions">Captions</h3>
+<h3 id="sub-heading">Sub Heading</h3>
 
-<p>Captions sit out in the right hand side gutter when there’s enough room. To create a caption, you need to wrap the content block in a div and use a block quote.</p>
+<p>The sub heading is optional and should be no more than 12 words.</p>
 
-<p>For example, the following:</p>
+<h3 id="italics">Italics</h3>
+
+<p>You can add italics to a title by using the HTML <i></i> tags, e.g. Design <i>Diary</i> will make ‘Diary’ italicised.</p>
+
+<h2 id="featured-images-and-galleries">Featured Images and Galleries</h2>
+
+<p>You can choose to show either a featured image or a featured gallery at the top of a  post. If you have both a featured image and a featured gallery, only the featured image will be shown, so be sure to remove a featured image if you want to show a featured gallery.</p>
+
+<p>Both featured images and featured galleries have size set heights and will retain their proportions, being no wider than 100% of the page. Very wide images will be cut off.
++ Mobile: Height set at 222px
++ Tablet: Height set at 450px
++ Laptop: Height set at 500px
++ Desktop: Height set at 550px</p>
+
+<p>Given the maximum height is 550px we recommend you do not use images smaller than this to ensure they don’t look stretched. To accommodate for retina displays you should use images twice the size of this, 1100px.</p>
+
+<h2 id="inline-images">Inline Images</h2>
+
+<p>Inline images are only restricted by their natural size and the width of the viewport. They will automatically scale to be no wider than the viewport or their set size.</p>
 
 <div>
-  <p><img src="img/screenshot.png" alt="My Image" /></p>
+  <p><img src="img/post-inline-image.png" alt="Inline Image" /></p>
 
   <blockquote>
     <h4 id="caption-title">Caption title</h4>
-    <p>With some content underneath.</p>
+    <p>Example of an inline image</p>
   </blockquote>
 </div>
 
-<p>Can be created by:</p>
+<h2 id="image-captions">Image Captions</h2>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">markdown=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-  ![My Image](img/screenshot.png)
+<p>Image captions are handled via the Wordpress media module. When you upload an image you can set the alt tag and the caption. It is recommended you should always include text for the alt tag for accessibility. Captions are optional and when populated they will display on both single images and gallery images.</p>
 
-&gt; #### Caption title  
-With some content underneath.
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<div>
+  <p><img src="img/post-image-caption.png" alt="Caption Image" /></p>
 
-<hr />
+  <blockquote>
+    <h4 id="caption-title-1">Caption title</h4>
+    <p>Example of an image with a caption</p>
+  </blockquote>
+</div>
 
-<h3 id="code-snippets">Code snippets</h3>
+<h2 id="thumbnail-images">Thumbnail Images</h2>
 
-<p>Jekyll has built-in support for syntax highlighting of code snippets. To include a code snippet in any post, just use the dedicated Liquid tags.</p>
+<p>Every post is required to have a thumbnail image. The Thumbnail image is used to display the post on the homepage, archive page, contributions page, category pages and in the related stories block.</p>
 
-<p>For example, the following:</p>
+<p>You can choose to display the post thumbnail image as a circle, triangle or rectangle. You do not need to do anything special to the image it will be automatically cropped and adjusted when you upload it. </p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
-  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
-  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></div>
+<p>Please ensure you do not upload images with transparent margins or padding as they will not appear as a solid shape when displayed on the site.</p>
 
-<p>Can be created by:</p>
+<p>The maximum size of a thumbnail on the site is when the post is featured as a ‘Recent’ story on the homepage, therefore the images you upload should be appropriate for this space.</p>
 
-<p>{% highlight ruby %}<br />
-def show<br />
-  @widget = Widget(params[:id])<br />
-  respond_to do |format|<br />
-    format.html # show.html.erb<br />
-    format.json { render json: @widget }<br />
-  end<br />
-end<br />
-{% endhighlight %}  </p>
+<p>The sizes displayed in the ‘Recent’ stories section on the homepage are:</p>
+
+<ul>
+  <li>Circle: 400px wide by 400px high</li>
+  <li>Triangle: 462px wide by 400px high</li>
+  <li>Rectangle: 534px wide by 400px high</li>
+</ul>
+
+<h2 id="featured-slideshow-posts">Featured Slideshow Posts</h2>
+
+<p>A featured slideshow post is one that is displayed on the homepage in the carousel. When a post is featured it will not be displayed in any of the other post areas on the homepage.</p>
+
+<p>To add a post to the slideshow edit the post and setting the  <code>Feature on homepage slideshow?</code> field to <code>Yes</code>.</p>
+
+<p>The image you upload for the featured will be automatically sized to fill the entire space of the carousel and we recommend you use an image that is at least 500px high and 1200px wide.</p>
+
+<p>The text you enter in the ‘Heading’ field is displayed in bold and the text you enter in the ‘Text’ field is displayed underneath. </p>
+
+<p>The primary category you select will be displayed above the post heading in the carousel.</p>
+
+<h2 id="posts">404 Posts</h2>
+
+<p>The 404 page is shown when a user visit a URL that does not exist on the site. You can select which posts to display on the 404 page by setting the <code>Show on 404 page?</code> field to <code>Yes</code>.</p>
+
+<h2 id="tags-for-related-stories">Tags for Related Stories</h2>
+
+<p>Related Stories can be shown at the bottom of every post and are populated by finding other posts with the same tags, therefore you should ensure you add at least one tag to every post and keep tags consistent to ensure related stories are shown.</p>
+
+<h2 id="author-override">Author Override</h2>
+
+<p>By default, when you select an Author for a post their name will be shown on the post and there will be a link their contributions page. If you would like to attribute an author but do not want to create a profile for them you can override the author that is displayed on the post.</p>
+
+<p>To override the author set the author to <code>aiga_eod_one_off_contributor</code> and fill the authors name into the Author Override field.</p>
+
+<p>It’s important that you set the author to <code>aiga_eod_one_off_contributor</code> otherwise it will show up on the selected authors contributions page.</p>
+
+<h2 id="post-ordering">Post Ordering</h2>
+
+<p>Posts are ordered by their published date in descending order, the newest at the top. If you would like to adjust the order the posts appear then you will need to adjust the published date.</p>
+
+<h2 id="the-eye">The ‘Eye’</h2>
+
+<p>The site has been configured to automatically insert an eye at the end of the last text paragraph on every post. If the post does not have any content the eye will not be displayed.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="page-post" id="post-3">
+      <div class="section">
+        <div class="head">
+          <div class="article">
+            <h1>Categories</h1>
+          </div>
+        </div>
+        <div class="body">
+          <div class="article">
+            <h2 id="managing-categories">Managing Categories</h2>
+
+<p>Categories are managed via Categories under posts categories.</p>
+
+<p>Parent categories are shown in the header navigation, if you add another category it will break the navigation because the navigation items have been absolutely positioned.</p>
+
+<p>Child categories in the navigation underneath their parent category. If you add too many child categories it will most likely break the layout so please check after adding new child categories.</p>
+
+<p>The order of parent and child categories can be managed using the Taxonomy Order settings found underneath the posts item in the admin menu.</p>
+
+<h2 id="multiple-categories-on-a-single-post">Multiple categories on a single post</h2>
+
+<p>You can safely assign multiple categories to a post and then select the ‘Primary Category’ as the one that displays with the post title.</p>
+
+<p>By assigning multiple categories the post will appear on multiple category pages.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="page-post" id="post-4">
+      <div class="section">
+        <div class="head">
+          <div class="article">
+            <h1>Users</h1>
+          </div>
+        </div>
+        <div class="body">
+          <div class="article">
+            <h2 id="create-and-manage">Create and manage</h2>
+
+<p>Authors are managed via the Users section of the Wordpress admin.</p>
+
+<p>To complete an authors profile you need to first create the user and then go to edit the user, this is a limitation of Wordpress.</p>
+
+<h3 id="optional-profile-fields">Optional Profile Fields</h3>
+
+<p>The following fields are optional for authors, however when they are filled in they will display on the Contributors and Contributor pages.</p>
+
+<ul>
+  <li>Company name</li>
+  <li>Company URL (Must be filled in if the company name is filled in)</li>
+  <li>Twitter URL (will show Twitter icon)</li>
+  <li>Facebook URL (will show Facebook icon)</li>
+  <li>Instagram URL (will show Instagram icon)</li>
+  <li>Personal URL (will show Computer icon)</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="page-post" id="post-5">
+      <div class="section">
+        <div class="head">
+          <div class="article">
+            <h1>Pages</h1>
+          </div>
+        </div>
+        <div class="body">
+          <div class="article">
+            <h2 id="editable-pages">Editable pages</h2>
+
+<p>There are a number of pages which can be managed through the Pages module of the Wordpress admin:</p>
+
+<ul>
+  <li>About</li>
+  <li>Terms and Conditions</li>
+</ul>
+
+<h2 id="placeholder-pages">Placeholder pages</h2>
+
+<p>In order to configure specific pages, placeholder pages had to be created in the Wordpress admin. It is very important you do not delete these pages as they will make them inaccessible on the website.</p>
+
+<ul>
+  <li>Archive</li>
+  <li>Contributors</li>
+</ul>
+
+<p>Even changing the name or slug of these pages might break the front-end of the website.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="page-post" id="post-6">
+      <div class="section">
+        <div class="head">
+          <div class="article">
+            <h1>Technical Details</h1>
+          </div>
+        </div>
+        <div class="body">
+          <div class="article">
+            <h2 id="wordpress-with-stencil">Wordpress with Stencil</h2>
+
+<p>The AIGA Eye on Design website has been built on Wordpress using a blank canvas theme, the <a href="http://github.com/micdijkstra/Stencil">Stencil</a> front-end framework and a number of open source plugins.</p>
+
+<h2 id="the-stencil-theme">The Stencil Theme</h2>
+
+<p>The Stencil theme is an adaptation of <a href="https://wordpress.org/themes/blankslate">BlankSlate</a> which has the <a href="http://github.com/micdijkstra/Stencil">Stencil</a> front-end framework included.</p>
+
+<p>Stencil precompiles Scss and Coffeescript. You can enable the Stencil precompiler by cding into the theme folder and running <code>./watch</code>.</p>
+
+<p>All custom CSS, Javascript and images can be found in the Stencil theme folder. </p>
+
+<h2 id="plugins">Plugins</h2>
+
+<p>The repository includes a number of open source plugins to provide extra functionality:</p>
+
+<ul>
+  <li>Ajax Load More: To load more posts on archive and search pages.</li>
+  <li>All In One SEO Pack: To configure Google Analytics, page titles and other meta information.</li>
+  <li>Category Order and Taxonomy Terms Order: To have control of the category order for display in the navigation.</li>
+  <li>Custom Bulk/Quick Edit by Aihrus: To add custom fields to the Quick Edit box</li>
+  <li>Custom Metadata Manager: To add custom fields to posts and users.</li>
+  <li>Featured Galleries: To create featured galleries on posts.</li>
+  <li>Order Bender: To set the primary category for a post that is a member of multiple categories,</li>
+  <li>Remove Image Links: To remove links around images in posts.</li>
+  <li>WP to Twitter: To provide configuration options for automatically sharing posts on Twitter.</li>
+  <li>WP User Avatar: To upload avatars for users, in particular contributors.</li>
+</ul>
 
           </div>
         </div>

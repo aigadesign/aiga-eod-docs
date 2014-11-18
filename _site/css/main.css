@@ -266,11 +266,17 @@ header .button span {
 header .button {
   padding-top: 5px !important; }
 
+.page-cta .article {
+  padding-top: 25px !important; }
+
 header {
   padding-top: 45px !important; }
 
 header .button {
   padding-bottom: 5px !important; }
+
+.page-cta .article {
+  padding-bottom: 25px !important; }
 
 header {
   padding-bottom: 45px !important; }
@@ -299,10 +305,13 @@ header .button {
 .page-cta, hr {
   margin-top: 115px !important; }
 
+.page-cta .article p {
+  margin-bottom: 0px !important; }
+
 .page-post h4, .page-cta h4 {
   margin-bottom: 5px !important; }
 
-.page-post p, .page-cta p, .page-cta, .page-post h3, .page-cta h3 {
+.page-post p, .page-cta p, .page-post ul, .page-cta ul, .page-post ol, .page-cta ol, .page-post h3, .page-cta h3 {
   margin-bottom: 25px !important; }
 
 .highlight, .page-post img, .page-post hr, .page-cta hr, .page-post h1, .page-cta h1, .page-post h2, .page-cta h2 {
@@ -365,7 +374,7 @@ header {
   .page-post h2, .page-cta h2, .page-post h3, .page-cta h3, .page-post h1, .page-cta h1 {
     margin-top: 90px !important; }
 
-  .page-post h3, .page-cta h3, .page-post p, .page-cta p {
+  .page-post h3, .page-cta h3, .page-post p, .page-cta p, .page-post ul, .page-cta ul, .page-post ol, .page-cta ol {
     margin-bottom: 45px !important; }
 
   .highlight, .page-post img, .page-post h1, .page-cta h1 {
@@ -552,7 +561,6 @@ body {
   color: #333; }
 
 .no-scroll {
-  height: 100%;
   overflow: hidden; }
 
 a {
@@ -707,16 +715,34 @@ footer {
     background: #ffe000;
     min-height: 100%;
     max-height: 100%; }
+    .page-nav.active .nav-header {
+      background: #ffe000; }
     .page-nav.active .nav-toggle {
       background: #231f20; }
-    .page-nav.active footer {
-      bottom: 0; }
+    .page-nav.active .article {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      overflow: scroll;
+      overflow-scrolling: touch;
+      -webkit-overflow-scrolling: touch; }
+  .page-nav .nav-header {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #231f20;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 10; }
   .page-nav .logo {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     background: transparent url("../img/logo-160x160.png") no-repeat center center;
-    background-size: 80px 80px;
+    background-size: 60px 60px;
     float: left;
     height: 80px;
     margin-top: 10px;
@@ -738,28 +764,28 @@ footer {
     width: 60px; }
   .page-nav.invert {
     background: #ffe000; }
+    .page-nav.invert .nav-header {
+      background: #ffe000; }
     .page-nav.invert .nav-toggle {
       background: #231f20; }
   .page-nav .posts-wrapper {
     padding-top: 150px; }
     .page-nav .posts-wrapper .mod-post-list .post-link {
       border-width: 0; }
-  .page-nav footer {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    bottom: -70px;
-    position: absolute; }
   @media screen and (min-width: 1024px) {
     .page-nav {
       background: #ffe000;
-      min-height: 100vh;
+      height: 100vh;
       max-height: inherit;
       width: 300px;
       overflow: scroll;
+      overflow-scrolling: touch;
+      -webkit-overflow-scrolling: touch;
       position: fixed; }
+      .page-nav .nav-header {
+        background: transparent;
+        height: auto;
+        position: inherit; }
       .page-nav .logo {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -774,10 +800,9 @@ footer {
         margin: 0; }
       .page-nav .nav-toggle {
         display: none; }
-      .page-nav .posts-wrapper {
-        padding-top: 0; }
-      .page-nav footer {
-        bottom: 0; } }
+      .page-nav .article, .page-nav .body, .page-nav .posts-wrapper {
+        padding-top: 0;
+        min-height: 100%; } }
 
 /******************************************************************
   Page — Introduction
@@ -823,7 +848,7 @@ footer {
   @media screen and (min-width: 1024px) {
     .page-post {
       padding-top: 0; } }
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1024px) {
     .page-post .section {
       padding-right: 150px !important; }
     .page-post blockquote {
@@ -835,3 +860,8 @@ footer {
 /******************************************************************
   Page — CTA
 ******************************************************************/
+.page-cta .section {
+  background: #231f20;
+  color: white; }
+.page-cta .article a {
+  color: #ffe000; }

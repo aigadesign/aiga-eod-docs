@@ -3,14 +3,12 @@
 
   disableBodyScroll = function() {
     $("body").addClass('no-scroll');
-    return $("body").bind("touchmove", function(e) {
-      e.preventDefault();
-    });
+    return $(".page-wrapper").addClass('no-scroll');
   };
 
   enableBodyScroll = function() {
     $("body").removeClass('no-scroll');
-    return $("body").unbind('touchmove');
+    return $(".page-wrapper").removeClass('no-scroll');
   };
 
   toggleBodyScroll = function() {
