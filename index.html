@@ -4,16 +4,21 @@ layout: default
 
 <div class="page-nav" id="page-nav">
   <div class="body">
-    <div class="article">
+    <div class="nav-header">
       <div class="logo"></div>
       <div class="nav-toggle" data-toggle-nav="#page-nav"></div>
+    </div>
+    <div class="article">
       <div class="posts-wrapper" id="#post-wrapper">
-        <ul class="mod-post-list" id="nav">
-          <li class="post current"><a class="post-link" href="#post-0">Introduction</a></li>
-          {% for post in site.posts reversed %}
-            <li class="post"><a class="post-link" href="#post-{{ forloop.index }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
+        <div class="wrapper">
+          <ul class="mod-post-list" id="nav">
+            <li class="post current"><a class="post-link" href="#post-0">Introduction</a></li>
+            {% for post in site.posts reversed %}
+              <li class="post"><a class="post-link" href="#post-{{ forloop.index }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
         {% include footer.html %}
       </div>
     </div>
